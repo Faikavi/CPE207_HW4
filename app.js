@@ -9,20 +9,26 @@ const server = http.createServer((req,res) => {
             res.writeHead(200,{'content-type': 'text/html'});
             res.end(content);
         });
-    }else if(req.url === '/gallery'){
+    }else if(req.url === '/gallery.html'){
         fs.readFile('./public/gallery.html',(err,content) => {
             if(err) throw err;
             res.writeHead(200,{'content-type': 'text/html'});
             res.end(content);
         });
-    }else if(req.url === '/contact'){
+    }else if(req.url === '/contact.html'){
         fs.readFile('./public/contact.html',(err,content) => {
             if(err) throw err;
             res.writeHead(200,{'content-type': 'text/html'});
             res.end(content);
         });
-    }else if(req.url === '/profile'){
+    }else if(req.url === '/profile.html'){
         fs.readFile('./public/profile.html',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/html'});
+            res.end(content);
+        });
+    }else if(req.url === '/index.html'){
+        fs.readFile('./public/index.html',(err,content) => {
             if(err) throw err;
             res.writeHead(200,{'content-type': 'text/html'});
             res.end(content);
@@ -33,8 +39,15 @@ const server = http.createServer((req,res) => {
             res.writeHead(200,{'content-type': 'text/jpg'});
             res.end(content);
         });
-    }else if(req.url === '/images/overlay.png'){
-        fs.readFile('./public/images/overlay.png',(err,content) => {
+    }else if(req.url === '/images/IMG_3907.JPG'){
+        fs.readFile('./public/images/IMG_3907.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }
+    else if(req.url === '/images/IMG_3903.JPG'){
+        fs.readFile('./public/images/IMG_3903.JPG',(err,content) => {
             if(err) throw err;
             res.writeHead(200,{'content-type': 'text/png'});
             res.end(content);
@@ -43,6 +56,66 @@ const server = http.createServer((req,res) => {
         fs.readFile('./public/images/IMG_3945.JPG',(err,content) => {
             if(err) throw err;
             res.writeHead(200,{'content-type': 'text/jpg'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3953.JPG'){
+        fs.readFile('./public/images/IMG_3953.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3955.JPG'){
+        fs.readFile('./public/images/IMG_3955.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3992.JPG'){
+        fs.readFile('./public/images/IMG_3992.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3905.JPG'){
+        fs.readFile('./public/images/IMG_3905.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3908.JPG'){
+        fs.readFile('./public/images/IMG_3908.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3954.JPG'){
+        fs.readFile('./public/images/IMG_3954.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3963.JPG'){
+        fs.readFile('./public/images/IMG_3963.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3993.JPG'){
+        fs.readFile('./public/images/IMG_3993.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3994.JPG'){
+        fs.readFile('./public/images/IMG_3994.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
+            res.end(content);
+        });
+    }else if(req.url === '/images/IMG_3995.JPG'){
+        fs.readFile('./public/images/IMG_3995.JPG',(err,content) => {
+            if(err) throw err;
+            res.writeHead(200,{'content-type': 'text/png'});
             res.end(content);
         });
     }else if(req.url === '/assets/js/jquery.min.js'){
